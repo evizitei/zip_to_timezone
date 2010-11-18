@@ -1,5 +1,5 @@
-class ZipToTimezone < ZipMapper
-  TZ_MAPPINGS = {
+class ZipToState < ZipMapper
+  STATE_MAPPINGS = {
     "Hawaii" => ['967', '968'],
     "Alaska" => ['995'..'999'],
     "Pacific Time (US & Canada)" => ['838', '889'..'891', '893'..'898', '90'..'95', '960', '961', '970'..'978', '980'..'986', '988'..'994'],
@@ -69,7 +69,6 @@ class ZipToTimezone < ZipMapper
   }
 
   def self.mappings
-    TZ_MAPPINGS
+    STATE_MAPPINGS
   end
-  
 end
